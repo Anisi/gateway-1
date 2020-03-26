@@ -77,7 +77,7 @@ class Payir extends AbstractProvider
     {
         $fields = [
             'api'      => $this->config['api'],
-            'amount'   => $transaction->getAmount()->getToman(),
+            'amount'   => $transaction->getAmount()->getRiyal(),
             'redirect' => $this->getCallback($transaction, true),
         ];
 
